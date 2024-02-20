@@ -1,20 +1,36 @@
 
 function countCharacterInstances(string) {
   let result = {}
-  for(let i = 0; i < string.length; i++) {
-    let char = string[i]
-    console.log(char)
-    if(result[char]) {
-      result[char] += 1
+  string.split('').forEach((char) => {
+    console.log("char", char)
+    let key = char === " " ? "space" : char
+    if(result[key]) {
+      result[key] += 1
     } else {
-      result[char] = 1
+      result[key] = 1
     }
-  }
+  })
   console.log('result', result)
   return result
 }
 
 export default countCharacterInstances
+
+
+// function countCharacterInstances(string) {
+//   let result = {}
+//   for(let i = 0; i < string.length; i++) {
+//     let char = string[i]
+//     console.log(char)
+//     if(result[char]) {
+//       result[char] += 1
+//     } else {
+//       result[char] = 1
+//     }
+//   }
+//   console.log('result', result)
+//   return result
+// }
 
 /**
  Develop a function that accepts a single string as its argument. The function should analyze the input string and produce an output in the form of an object. This object should contain key-value pairs where each key is a unique character from the input string, and the corresponding value is the count of occurrences of that character within the string. 
