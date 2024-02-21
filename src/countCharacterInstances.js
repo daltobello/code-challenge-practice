@@ -2,35 +2,18 @@
 function countCharacterInstances(string) {
   let result = {}
   string.split('').forEach((char) => {
-    console.log("char", char)
-    let key = char === " " ? "space" : char
+    let key = char === " " ? "space" : char.toLowerCase()
     if(result[key]) {
       result[key] += 1
     } else {
       result[key] = 1
     }
   })
-  console.log('result', result)
+  console.log(result)
   return result
 }
 
 export default countCharacterInstances
-
-
-// function countCharacterInstances(string) {
-//   let result = {}
-//   for(let i = 0; i < string.length; i++) {
-//     let char = string[i]
-//     console.log(char)
-//     if(result[char]) {
-//       result[char] += 1
-//     } else {
-//       result[char] = 1
-//     }
-//   }
-//   console.log('result', result)
-//   return result
-// }
 
 /**
  Develop a function that accepts a single string as its argument. The function should analyze the input string and produce an output in the form of an object. This object should contain key-value pairs where each key is a unique character from the input string, and the corresponding value is the count of occurrences of that character within the string. 
@@ -52,3 +35,36 @@ export default countCharacterInstances
   - if the key does not exist, add it and assign the property value to 1.
   - return the result object outside of the loop
   */
+
+
+  // function countCharacterInstances(string) {
+//   let result = {}
+//   for(let i = 0; i < string.length; i++) {
+//     let char = string[i]
+//     console.log(char)
+//     if(result[char]) {
+//       result[char] += 1
+//     } else {
+//       result[char] = 1
+//     }
+//   }
+//   console.log('result', result)
+//   return result
+// }
+
+
+// function countCharacterInstances(string) {
+//   let result = {}
+//   console.log(string.split(''))
+//   string.split('').forEach((char) => {
+//     console.log("char", char)
+//     let key = char === " " ? "space" : char
+//     if(result[key]) {
+//       result[key] += 1
+//     } else {
+//       result[key] = 1
+//     }
+//   })
+//   console.log('result', result)
+//   return result
+// }
