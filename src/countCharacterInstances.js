@@ -36,7 +36,7 @@ export default countCharacterInstances
   - return the result object outside of the loop
   */
 
-
+// FIRST ATTEMPT
   // function countCharacterInstances(string) {
 //   let result = {}
 //   for(let i = 0; i < string.length; i++) {
@@ -48,23 +48,6 @@ export default countCharacterInstances
 //       result[char] = 1
 //     }
 //   }
-//   console.log('result', result)
-//   return result
-// }
-
-
-// function countCharacterInstances(string) {
-//   let result = {}
-//   console.log(string.split(''))
-//   string.split('').forEach((char) => {
-//     console.log("char", char)
-//     let key = char === " " ? "space" : char
-//     if(result[key]) {
-//       result[key] += 1
-//     } else {
-//       result[key] = 1
-//     }
-//   })
 //   console.log('result', result)
 //   return result
 // }
