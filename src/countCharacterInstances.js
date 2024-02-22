@@ -9,7 +9,6 @@ function countCharacterInstances(string) {
       result[key] = 1
     }
   })
-  console.log(result)
   return result
 }
 
