@@ -1,5 +1,7 @@
-function getIntegerFromBinaryValue() {
-
+function getIntegerFromBinaryValue(binaryValues) {
+ for(let i = 0; i < binaryValues.length; i++) {
+  console.log(i)
+ }
 }
 
 export default getIntegerFromBinaryValue
