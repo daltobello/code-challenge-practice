@@ -1,5 +1,17 @@
-function getCalculation() {
+function getCalculation(num1, operator, num2) {
+  const operators = {
+    "+": (a, b) => a + b, 
+    "-": (a, b) => a - b,
+    "*": (a, b) => a * b,
+    "/": (a, b) => ( b !== 0 ? a / b : null)
+  }
 
+  const calculate = operators[operator]
+  if(calculate) {
+    return calculate(num1, num2)
+  } else {
+    return null
+  }
 }
 
 export default getCalculation
@@ -15,7 +27,7 @@ If the string is not one of the specified characters, the function should return
 You cannot divide by zero. If an attempt to divide by zero is made, return null
 1- I need to write a function that takes 3 params, 
 @params numbers and a string(operator)
-if the second number is zero and operator is devision then I should immediately return null. 
+if the second number is zero and operator is division then I should immediately return null. 
 if operation is + I should return first number + second number 
 if operation is - I should return first number - second number
 ---- etc... 
@@ -42,4 +54,24 @@ params : number , string operation , number
 output : number 
 edge cases : 
 
+
+INPUT:  number , string operation , number 
+OUTPUT: number
+HOW: 
+- 
 */
+
+// function getCalculation(num1, operator, num2) {
+//   if(operator === "+") {
+//     return num1 + num2
+//   } else if (operator === "-") {
+//     return num1 - num2
+//   } else if(operator === "*") {
+//     return num1 * num2
+//   } else if(operator === "/" && num2 !== 0) {
+//     return num1 / num2
+//   }
+//   return null
+// }
+
+// export default getCalculation
