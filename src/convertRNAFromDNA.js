@@ -1,5 +1,9 @@
-function convertRNAFromDNA() {
-
+function convertRNAFromDNA(dnaString) {
+  if(dnaString.includes("T")) {
+    const convertedRNA = dnaString.replace(/T/g, "U")
+    return convertedRNA
+  }
+  return dnaString
 }
 
 export default convertRNAFromDNA
