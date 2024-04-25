@@ -36,16 +36,16 @@ describe("sortBallColor", () => {
       { color: "purple", size: "medium" },
       { color: "purple", size: "large" },
       { color: "purple", size: "small" },
-      { color: "blue", size: "medium" },
-      { color: "blue", size: "large" },
-      { color: "blue", size: "medium" },
-      { color: "blue", size: "small" },
-      { color: "blue", size: "small" },
       { color: "gray", size: "large" },
       { color: "gray", size: "small" },
       { color: "gray", size: "large" },
       { color: "gray", size: "medium" },
       { color: "gray", size: "medium" },
+      { color: "blue", size: "medium" },
+      { color: "blue", size: "large" },
+      { color: "blue", size: "medium" },
+      { color: "blue", size: "small" },
+      { color: "blue", size: "small" },
     ]);
   });
 });
