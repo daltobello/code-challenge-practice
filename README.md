@@ -6,4 +6,21 @@
 - Iterate and refactor code to improve legibility and efficiency
 
 ### Challenges
-- Fibonacci Sequence
+- calculateTip
+- convertRNAFromDNA
+- countCharacterInstances
+- createPhone
+- fibonacci-recursive
+- fibonacci
+- findDivisibleNumbers
+- findMajorityElement
+- findMaxAndMin
+- findVowels
+- getCalculation
+- getIntegerFromBinaryValue
+- isAnagram
+- isPalindrome
+- sortBallColor
+- sumEvenNums
+- updateNum
+
