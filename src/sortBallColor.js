@@ -10,7 +10,6 @@ function sortBallColor(balls) {
     }
     sortedBalls[color].push(balls[i])
   }
-  console.log('sorted', Object.values(sortedBalls).flat())
   return Object.values(sortedBalls).flat()
 }
 
