@@ -1,7 +1,30 @@
-function convertToHexspeak(decimalNum) {
-  console.log(decimalNum)
+function convertToHexspeak(num) {
+  console.log(num)
+  const hexspeak = {
+    'A': 10,
+    'B': 11,
+    'C': 12,
+    'D': 13,
+    'E': 14,
+    'F': 15
+};
 
+const hexDigits = num.toString(16).toUpperCase(); // convert to hexadecimal and uppercase
+
+for (let i = 0; i < hexDigits.length; i++) {
+    const digit = hexDigits[i];
+    if (!(digit in hexspeak || digit === '0' || digit === '1')) {
+        return "ERROR";
+    }
 }
+
+// replace any occurrence of 0 with O and 1 with I
+const hexConverted = hexDigits.replace(/0/g, 'O').replace(/1/g, 'I');
+return hexConverted;
+}
+
+// NOT SOLVED: returning "IOI" not "AF"
+// come back this this when fresh.
 
 export default convertToHexspeak
 
@@ -24,6 +47,6 @@ OUTPUT: hexspeak string or the string "ERROR" if the input can't be represented 
 HOW: 
 in hexadecimal notation, the digits 0 through 9 represent values 0 through 9 respectively, and the letters A through F represent values 10 through 15 respectively.
 
-divide decimalNum by 16 
+divide num by 16 
 
 */
