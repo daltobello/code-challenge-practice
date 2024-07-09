@@ -1,16 +1,4 @@
-function findVowels(word) {
-  const lowercaseWord = word.toLowerCase()
-  const allVowels = ["a", "e", "i", "o", "u", "y"]
-  const vowels = []
-  for(let i = 0; i < lowercaseWord.length; i++) {
-    if(allVowels.includes(lowercaseWord[i])) {
-      vowels.push(lowercaseWord[i])
-    } 
-  }
-  return vowels
-}
 
-export default findVowels
 
 /*
 Write a function that takes a string as input and returns a list of all the vowels present in the string. Assume that the input string contains only lowercase letters.
