@@ -26,4 +26,9 @@ describe("firstNonRepeatingCharacter", () => {
     const result = firstNonRepeatingCharacter("b")
     expect(result).to.equal("b")
   })
+
+  it("should treat upper and lower case characters as distinct and return the first non-repeating character", () => {
+    const result = firstNonRepeatingCharacter("aAbB")
+    expect(result).to.equal("a")
+  })
 })

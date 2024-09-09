@@ -18,7 +18,8 @@ function firstNonRepeatingCharacter(str) {
       return char
     }
   }
-
+// if there is no non-repeating character, return null
+  return null
 }
 
 export default firstNonRepeatingCharacter
