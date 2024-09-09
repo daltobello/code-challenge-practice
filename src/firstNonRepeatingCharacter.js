@@ -1,13 +1,12 @@
 function firstNonRepeatingCharacter(str) {
   let characterCount = {}
-  let counter = 1
 
   for(let i = 0; i < str.length; i++) {
     let char = str[i]
     if(characterCount[char]) {
-      characterCount[char] = counter++
+      characterCount[char] +=1
     } else {
-      characterCount[char] = counter
+      characterCount[char] = 1
     }
     console.log(characterCount)
   }
